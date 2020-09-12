@@ -15,7 +15,7 @@
 
 3. Create a database called **"election_db"** in PgAdmin 4.
 
-4. Then run the sql file called **"createELectionDB.sql"**.
+4. Then run the sql file called **"createElectionDB.sql"**.
 
 5. Open a git bash from your local **"ETL-Project" folder**. Run **"source activate NewPythonData"** command.
 
