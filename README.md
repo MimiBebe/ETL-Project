@@ -9,9 +9,9 @@
 1. Clone this repo titled “ETL-Project”. 
     * Here you will find a **"ETL_Notebook.ipynb"** file which is a Jupyter Notebook contains our etl workflow.
     * **Resources folder** has two excel sheets that we used for this project.
-    * Two sql files: **"createELectionDB.sql"** and **"query.sql"** you will need for your database in PgAdmin 4
+    * Two sql files: **"createElectionDB.sql"** and **"query.sql"** you will need for your database in PgAdmin 4
 
-2. Create a **config.py** where you will enter your **username** and **password** for your Postgres account. You will need this to run the tables in PgAdmin 4
+2. Create a **config.py** where you will enter your **username** and **password** for your Postgres account. You will need this to succesfully create a conenction to your local dabatse.
 
 3. Create a database called **"election_db"** in PgAdmin 4.
 
@@ -24,6 +24,6 @@
    * You will **create a connection** to the database
    * You will check for a **successful connection** to the database and confirm that the tables have been created.
 
-7. Proceed to the file called **“query.sql”** to run dif  ferent **“Join”** options to compare Democratic and Republican voting data between 1996 and 2016
+7. Proceed to the file called **“query.sql”** to run various **“Join”** options to compare Democratic and Republican voting data between 1996 and 2016
    * You will notice there are some “null” values in some of our join options. Redistricting following each US census removed some districts and added others. Reconciling these changes is beyond the scope of this project.
    * Our “inner join” command will show only the district IDs that were consistent between the two election years and give you a better idea of whether the districts shifted parties or if there was a significant difference in voter turnout between 1996 and 2016. 
