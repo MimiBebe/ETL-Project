@@ -1,15 +1,17 @@
-CREATE TABLE Election2016 (
-	Precinct_Code INT PRIMARY KEY,
-	Precinct_Name VARCHAR(255) NOT NULL,
-	Republican_Votes_2016 INT NOT NULL,
-	Democratic_Votes_2016 INT NOT NULL
+CREATE TABLE election2016 (
+	district_id INT PRIMARY KEY,
+	precinct_code INT NOT NULL,
+	precinct_name VARCHAR(255) NOT NULL,
+	republican_votes_2016 INT NOT NULL,
+	democratic_votes_2016 INT NOT NULL
 );
 
-CREATE TABLE Election1996 (
-	Precinct_Code INT PRIMARY KEY,
-	Precinct_Name VARCHAR(255) NOT NULL,
-	Republican_Votes_1996 INT NOT NULL,
-	Democratic_Votes_1996 INT NOT NULL
+CREATE TABLE election1996 (
+	district_id INT PRIMARY KEY,
+	precinct_code INT NOT NULL,
+	precinct_name VARCHAR(255) NOT NULL,
+	republican_votes_1996 INT NOT NULL,
+	democratic_votes_1996 INT NOT NULL
 );
 
-SELECT * FROM ELection2016;
+
